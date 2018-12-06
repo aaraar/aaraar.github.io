@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>u-ov homepage</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+       <ul>
+           <li><a href="#"><img src="media/SVG/hbmenu.svg" alt="hamburger menu"></a></li>
+           <li><img src="media/SVG/logoWhite.svg" alt="u-ov logo white"></li>
+           <li id="options"><a href="#"><img src="media/SVG/search.svg" alt=""></a><a href="#"><img src="media/SVG/profile.svg" alt=""></a></li>
+       </ul>
+    </header>
+    <nav>
+        <ul>
+            <li id="active"><a href="">ontdekken</a></li>
+            <li><a href="">opgeslagen</a></li>
+            <li><a href="">account</a></li>
+        </ul>
+    </nav>
+    <aside>
+
+        <form action="post" class="find" id="filter">
+            <fieldset class="formContent">
+                <legend>Vind een verhaal</legend>
+                <label for="keyword" id="label--top">zoek op trefwoorden </label>
+                <input type="text" name="keyword" id="keyword" required>
+                <label>gekozen trefwoorden:</label>
+                <label for="tijd">hoeveel tijd heb je?</label>
+                <input id="slider1" type="range" name="tijd" min="0" max="60" step="1" />
+                <fieldset class="niveauSelect">
+                    <input type="radio" class="niveau" name="niveau" id="beginner" value="beginner">
+                    <label for="beginner" class="radioButton">beginner</label>
+                    <input type="radio" name="niveau" class="niveau" id="gemmiddeld" value="gemmiddeld">
+                    <label for="gemmiddeld" class="radioButton">gemmiddeld</label>
+                    <input type="radio" name="niveau" class="niveau" id="gevorderd" value="gevorderd">
+                    <label for="gevorderd" class="radioButton">gevorderd</label>
+                </fieldset>
+            </fieldset>
+        </form>
+        <form action="post" class="find" id="sort">
+            <fieldset>
+                <legend>sorteer op</legend>
+                <select name="sort--dropdown" id="sort--dropdown">
+                <option value="1">best beoordeeld</option>
+                <option value="2">meest Recent</option>
+                <option value="3">meest bekeken</option>
+                <option value="4">leesduur</option>
+            </select>
+            </fieldset>
+        </form>
+    </aside>
+    <main>
+        <section class="item" id="item--ollekebolleke">
+            <h3>ollekebolleke</h3>
+            <img src="media/SVG/ollekebolleke.svg">
+            <p>Molovich's verhaal in ollekebolleke dichtvorm</p>
+            <a href="">tik &amp; lees verder</a>
+        </section>
+        <section class="item" id="item--2">
+            <h3>ollekebolleke</h3>
+            <img src="media/SVG/ollekebolleke.svg">
+            <p>Molovich's verhaal in ollekebolleke dichtvorm</p>
+            <a href="">tik &amp; lees verder</a>
+        </section>
+    </main>
+
+</body>
+
+</html>
