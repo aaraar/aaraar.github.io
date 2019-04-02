@@ -1,2 +1,2 @@
 # aaraar.github.io
-CMD website blok WEB
+CMD website
